@@ -25,36 +25,94 @@ require 'utils.php';
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
+  </div>
   </nav>
  
 
 
   <div class="container">
-    <div class="section">
-      
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="material-icons prefix">search</i>
-              <input id="icon_prefix" type="text" class="validate">
-              <label for="icon_prefix">Buscar</label>
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="https://cdn-icons-png.flaticon.com/512/1315/1315556.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+                <span class="black-text">
+                Mesa <?=$_GET['id']?> - Comanda <?=rand(10,999)?>
+
+              </span>
             </div>
           </div>
-        </form>
+        </div>
       </div>
-      <?php
-      
-        for ($i = 1; $i <= 10; $i++) {
-            geraCardMesa($i);
-        }
-    
-      ?>
+      <ul class="collapsible" data-collapsible="accordion">
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">filter_drama</i>
+      Total
+      <span class="badge">R$ 40,00</span></div>
+    <div class="collapsible-body">
+
+    <table class="striped">
+        <thead>
+          <tr>
+              <th>QTD</th>
+              <th>Descrição</th>
+              <th>Valor Unitário</th>
+              <th>Valor Total</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td>Prato Principal A</td>
+            <td>R$ 25,00</td>
+            <td>R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Bebida B</td>
+            <td>R$ 10,00</td>
+            <td>R$ 10,00</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Macaxeira com fritas e peixe ao molho chinês</td>
+            <td>R$ 10,00</td>
+            <td>R$ 10,00</td>
+          </tr>
+         
+        </tbody>
+      </table>
+            
     </div>
-    <br><br>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">place</i>
+      Itens Pendenes
+      <span class="badge">1</span></div>
+    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+  </li>
+</ul> 
+
+<div class="row">
+      <div class="col s6 m6">
+            <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Voltar</a>
+      </div>
+      <div class="col s7 m7">
+            <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Encerrar comanda</a>
+      </div>
+      <div class="col s12 m12 right-align">
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+    </div>
+          
+        
+              
   </div>
-
-
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
