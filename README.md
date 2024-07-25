@@ -1,4 +1,5 @@
-# cd.pratics.org
+# cd.pratics.me
+# Ensinando php
 
 ## Cardapio digital
 ![cd](https://github.com/user-attachments/assets/d1070fbc-c6a7-447d-97c0-d144145d2dcc)
